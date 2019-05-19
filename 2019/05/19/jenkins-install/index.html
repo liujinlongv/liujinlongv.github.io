@@ -6,22 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://liujinlongv.github.io">
-  <title>Convolution学习笔记 | TyrionLiu&#39;s Blog</title>
+  <title>Jenkins Linux下安装步骤 | TyrionLiu&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="起因公司有个项目需要对波形进行软件滤波处理，涉及到了卷积的应用，将这两天的学习内容做一个整理。 定义卷积是两个变量在某范围内相乘后求和的结果。如果卷积的变量是序列x(n)和h(n)，则卷积的结果: 其中星号*表示卷积。当时序n=0时，序列h(-i)是h(i)的时序i取反的结果；时序取反使得h(i)以纵轴为中心翻转180度，所以这种相乘后求和的计算法称为卷积和，简称卷积。另外，n是使h(-i)位移的">
-<meta name="keywords" content="算法">
+  <meta name="description" content="首先安装Java环境，安装JDK1、查看yum库中都有哪些jdk版本1yum -y list java* 2、选择指定的版本安装，注意最后的 *以及yum源安装的是openjdk，注意openjdk的区别。1yum install java-1.8.0-openjdk* 3、安装完成后查看版本信息1java -version 下载jenkins123sudo wget -O /etc/yum.re">
+<meta name="keywords" content="前端">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Convolution学习笔记">
-<meta property="og:url" content="https://liujinlongv.github.io/2019/02/27/Convolution/index.html">
+<meta property="og:title" content="Jenkins Linux下安装步骤">
+<meta property="og:url" content="https://liujinlongv.github.io/2019/05/19/jenkins-install/index.html">
 <meta property="og:site_name" content="TyrionLiu&#39;s Blog">
-<meta property="og:description" content="起因公司有个项目需要对波形进行软件滤波处理，涉及到了卷积的应用，将这两天的学习内容做一个整理。 定义卷积是两个变量在某范围内相乘后求和的结果。如果卷积的变量是序列x(n)和h(n)，则卷积的结果: 其中星号*表示卷积。当时序n=0时，序列h(-i)是h(i)的时序i取反的结果；时序取反使得h(i)以纵轴为中心翻转180度，所以这种相乘后求和的计算法称为卷积和，简称卷积。另外，n是使h(-i)位移的">
+<meta property="og:description" content="首先安装Java环境，安装JDK1、查看yum库中都有哪些jdk版本1yum -y list java* 2、选择指定的版本安装，注意最后的 *以及yum源安装的是openjdk，注意openjdk的区别。1yum install java-1.8.0-openjdk* 3、安装完成后查看版本信息1java -version 下载jenkins123sudo wget -O /etc/yum.re">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D250/sign=63806e1ae7cd7b89ed6c3d863f254291/2f738bd4b31c8701160cdc36267f9e2f0608ffac.jpg">
-<meta property="og:updated_time" content="2019-03-04T16:51:49.609Z">
+<meta property="og:updated_time" content="2019-05-19T07:31:24.200Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Convolution学习笔记">
-<meta name="twitter:description" content="起因公司有个项目需要对波形进行软件滤波处理，涉及到了卷积的应用，将这两天的学习内容做一个整理。 定义卷积是两个变量在某范围内相乘后求和的结果。如果卷积的变量是序列x(n)和h(n)，则卷积的结果: 其中星号*表示卷积。当时序n=0时，序列h(-i)是h(i)的时序i取反的结果；时序取反使得h(i)以纵轴为中心翻转180度，所以这种相乘后求和的计算法称为卷积和，简称卷积。另外，n是使h(-i)位移的">
-<meta name="twitter:image" content="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D250/sign=63806e1ae7cd7b89ed6c3d863f254291/2f738bd4b31c8701160cdc36267f9e2f0608ffac.jpg">
+<meta name="twitter:title" content="Jenkins Linux下安装步骤">
+<meta name="twitter:description" content="首先安装Java环境，安装JDK1、查看yum库中都有哪些jdk版本1yum -y list java* 2、选择指定的版本安装，注意最后的 *以及yum源安装的是openjdk，注意openjdk的区别。1yum install java-1.8.0-openjdk* 3、安装完成后查看版本信息1java -version 下载jenkins123sudo wget -O /etc/yum.re">
   
     <link rel="alternative" href="/atom.xml" title="TyrionLiu&#39;s Blog" type="application/atom+xml">
   
@@ -157,33 +155,33 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Convolution" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-jenkins-install" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Convolution学习笔记
+      Jenkins Linux下安装步骤
     </h1>
   
 
         
-        <a href="/2019/02/27/Convolution/" class="archive-article-date">
-  	<time datetime="2019-02-27T09:08:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-27</time>
+        <a href="/2019/05/19/jenkins-install/" class="archive-article-date">
+  	<time datetime="2019-05-19T07:12:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-05-19</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>公司有个项目需要对波形进行软件滤波处理，涉及到了卷积的应用，将这两天的学习内容做一个整理。</p>
-<h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>卷积是两个变量在某范围内相乘后求和的结果。如果卷积的变量是序列x(n)和h(n)，则卷积的结果:<br><img src="https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D250/sign=63806e1ae7cd7b89ed6c3d863f254291/2f738bd4b31c8701160cdc36267f9e2f0608ffac.jpg" alt="卷积公式"></p>
-<p>其中星号*表示卷积。当时序n=0时，序列h(-i)是h(i)的时序i取反的结果；时序取反使得h(i)以纵轴为中心翻转180度，所以这种相乘后求和的计算法称为卷积和，简称卷积。另外，n是使h(-i)位移的量，不同的n对应不同的卷积结果。<br><a id="more"></a><br>知乎上有一个关于<a href="https://www.zhihu.com/question/22298352" target="_blank" rel="noopener">如何通俗易懂地解释卷积</a>。</p>
-<p>首先，我们需要有一个滤波器矩阵（有个高大上的名字叫卷积核）和一个要处理的波形。</p>
-<h2 id="频率归一化"><a href="#频率归一化" class="headerlink" title="频率归一化"></a>频率归一化</h2><p>归一化是一种无量纲处理手段，使物理系统数值的绝对值变成某种相对值关系。信号处理工具箱中经常使用的是nyquist频率，它被定义为采样频率的二分之一，在滤波器的阶数选择和设计中的截止频率均使用nyquist频率进行归一化处理。例如对于一个采样频率为500hz的系统，400hz的归一化频率就为400/500=0.8，归一化频率范围在[0,1]之间。如果将归一化频率转换为角频率，则将归一化频率乘以2*pi，如果将归一化频率转换为hz，则将归一化频率乘以采样频率的一半。</p>
-<h2 id="Hamming窗"><a href="#Hamming窗" class="headerlink" title="Hamming窗"></a>Hamming窗</h2><p>由于直接对信号（加矩形窗）截断会产生频率泄露，为了改善频率泄露的情况，加非矩形窗，一般都是加汉明窗，因为汉明窗的幅频特性是旁瓣衰减较大，主瓣峰值与第一个旁瓣峰值衰减可达40db。</p>
-<h2 id="零相移滤波"><a href="#零相移滤波" class="headerlink" title="零相移滤波"></a>零相移滤波</h2><p>网上有一个关于<a href="https://blog.csdn.net/csdn_kike/article/details/69056066" target="_blank" rel="noopener">零相移滤波的介绍</a></p>
+        <h2 id="首先安装Java环境，安装JDK"><a href="#首先安装Java环境，安装JDK" class="headerlink" title="首先安装Java环境，安装JDK"></a>首先安装Java环境，安装JDK</h2><p>1、查看yum库中都有哪些jdk版本<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y list java*</span><br></pre></td></tr></table></figure></p>
+<p>2、选择指定的版本安装，注意最后的 *以及yum源安装的是openjdk，注意openjdk的区别。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install java-1.8.0-openjdk*</span><br></pre></td></tr></table></figure></p>
+<p>3、安装完成后查看版本信息<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></table></figure></p>
+<h2 id="下载jenkins"><a href="#下载jenkins" class="headerlink" title="下载jenkins"></a>下载jenkins</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo</span><br><span class="line">sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key</span><br><span class="line">sudo yum install jenkins</span><br></pre></td></tr></table></figure>
+<h2 id="配置jenkins端口"><a href="#配置jenkins端口" class="headerlink" title="配置jenkins端口"></a>配置jenkins端口</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/sysconfig/jenkins</span><br></pre></td></tr></table></figure>
+<p>查找/JENKINS_PORT，修改JENKINS_PORT=”8080”，默认为“8080”，我修改为了8088</p>
+<h2 id="启动jenkins"><a href="#启动jenkins" class="headerlink" title="启动jenkins"></a>启动jenkins</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service jenkins restart</span><br></pre></td></tr></table></figure>
 
       
       
@@ -200,7 +198,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">算法</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
         		</li>
       		
 		</ul>
@@ -256,7 +254,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://liujinlongv.github.io/2019/02/27/Convolution/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://liujinlongv.github.io/2019/05/19/jenkins-install/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -270,18 +268,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/05/19/jenkins-install/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Jenkins Linux下安装步骤
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/09/18/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2019/02/27/Convolution/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Convolution学习笔记</div>
       <i class="icon-circle-right"></i>
     </a>
   

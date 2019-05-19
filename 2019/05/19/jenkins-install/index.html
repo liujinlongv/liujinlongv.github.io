@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://liujinlongv.github.io">
   <title>Jenkins Linux下安装步骤 | TyrionLiu&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="首先安装Java环境，安装JDK1、查看yum库中都有哪些jdk版本1yum -y list java* 2、选择指定的版本安装，注意最后的 *以及yum源安装的是openjdk，注意openjdk的区别。1yum install java-1.8.0-openjdk* 3、安装完成后查看版本信息1java -version 下载jenkins123sudo wget -O /etc/yum.re">
+  <meta name="description" content="首先安装Java环境，安装JDK1、查看yum库中都有哪些jdk版本1yum -y list java* 2、选择指定的版本安装，注意最后的 *以及yum源安装的是openjdk，注意openjdk的区别。1yum install java-1.8.0-openjdk* 3、安装完成后查看版本信息1java -version">
 <meta name="keywords" content="前端">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Jenkins Linux下安装步骤">
 <meta property="og:url" content="https://liujinlongv.github.io/2019/05/19/jenkins-install/index.html">
 <meta property="og:site_name" content="TyrionLiu&#39;s Blog">
-<meta property="og:description" content="首先安装Java环境，安装JDK1、查看yum库中都有哪些jdk版本1yum -y list java* 2、选择指定的版本安装，注意最后的 *以及yum源安装的是openjdk，注意openjdk的区别。1yum install java-1.8.0-openjdk* 3、安装完成后查看版本信息1java -version 下载jenkins123sudo wget -O /etc/yum.re">
+<meta property="og:description" content="首先安装Java环境，安装JDK1、查看yum库中都有哪些jdk版本1yum -y list java* 2、选择指定的版本安装，注意最后的 *以及yum源安装的是openjdk，注意openjdk的区别。1yum install java-1.8.0-openjdk* 3、安装完成后查看版本信息1java -version">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-19T07:31:24.200Z">
+<meta property="og:updated_time" content="2019-05-19T07:38:14.627Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jenkins Linux下安装步骤">
-<meta name="twitter:description" content="首先安装Java环境，安装JDK1、查看yum库中都有哪些jdk版本1yum -y list java* 2、选择指定的版本安装，注意最后的 *以及yum源安装的是openjdk，注意openjdk的区别。1yum install java-1.8.0-openjdk* 3、安装完成后查看版本信息1java -version 下载jenkins123sudo wget -O /etc/yum.re">
+<meta name="twitter:description" content="首先安装Java环境，安装JDK1、查看yum库中都有哪些jdk版本1yum -y list java* 2、选择指定的版本安装，注意最后的 *以及yum源安装的是openjdk，注意openjdk的区别。1yum install java-1.8.0-openjdk* 3、安装完成后查看版本信息1java -version">
   
     <link rel="alternative" href="/atom.xml" title="TyrionLiu&#39;s Blog" type="application/atom+xml">
   
@@ -178,6 +178,7 @@
         <h2 id="首先安装Java环境，安装JDK"><a href="#首先安装Java环境，安装JDK" class="headerlink" title="首先安装Java环境，安装JDK"></a>首先安装Java环境，安装JDK</h2><p>1、查看yum库中都有哪些jdk版本<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y list java*</span><br></pre></td></tr></table></figure></p>
 <p>2、选择指定的版本安装，注意最后的 *以及yum源安装的是openjdk，注意openjdk的区别。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install java-1.8.0-openjdk*</span><br></pre></td></tr></table></figure></p>
 <p>3、安装完成后查看版本信息<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
 <h2 id="下载jenkins"><a href="#下载jenkins" class="headerlink" title="下载jenkins"></a>下载jenkins</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo</span><br><span class="line">sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key</span><br><span class="line">sudo yum install jenkins</span><br></pre></td></tr></table></figure>
 <h2 id="配置jenkins端口"><a href="#配置jenkins端口" class="headerlink" title="配置jenkins端口"></a>配置jenkins端口</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/sysconfig/jenkins</span><br></pre></td></tr></table></figure>
 <p>查找/JENKINS_PORT，修改JENKINS_PORT=”8080”，默认为“8080”，我修改为了8088</p>
